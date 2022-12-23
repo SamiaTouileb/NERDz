@@ -6,7 +6,7 @@ In the NERDz dataset we added named entity annotations on top of the extension o
 
 # The NArabizi treebank
 
-The NArabizi treebank was developped by Seddah et al. (2020). It contains manually annotated syntactic and morphological information,  and comprises around 1,500 sentences written in the Algerian dialect. These are mostly comments from newspapers' web forums (1,300 sentences from (Cotterell et al., 2014)),  in addition to 200 sentences from song lyrics.  The sentences are annotated on five different levels, covering tokenization, morphology, identification of code-switching, syntax, and translation to French (Seddah et al., 2020). Touileb and Barnes (2021) have further extended the NArabizi treebank, by first cleaning the treebank for duplicates, correcting some of the French translations, and some of the code-switching labels. But most importantly, they manually transliterated each sentence into purely arabic script and code-switched scripts. The treebank therefore has three parallel writing forms for each token in a sentence. They have also anotated each sentence of the treebank for sentiment and topic (see Touileb and Barnes (2021) for more details).  Due to the preprocessing, this version of the treebank (Touileb and Barnes, 2021) is a little bit smaller than the original treebank (Seddah et al., 2020). NERDz is built on top of this modified version.
+The NArabizi treebank was developed by Seddah et al. (2020). It contains manually annotated syntactic and morphological information,  and comprises around 1,500 sentences written in the Algerian dialect. These are mostly comments from newspapers' web forums (1,300 sentences from (Cotterell et al., 2014)),  in addition to 200 sentences from song lyrics.  The sentences are annotated on five different levels, covering tokenization, morphology, identification of code-switching, syntax, and translation to French (Seddah et al., 2020). Touileb and Barnes (2021) have further extended the NArabizi treebank, by first cleaning the treebank for duplicates, correcting some of the French translations, and some of the code-switching labels. But most importantly, they manually transliterated each sentence into purely Arabic script and code-switched scripts. The treebank therefore has three parallel writing forms for each token in a sentence. They have also annotated each sentence of the treebank for sentiment and topic (see Touileb and Barnes (2021) for more details).  Due to the preprocessing, this version of the treebank (Touileb and Barnes, 2021) is a little bit smaller than the original treebank (Seddah et al., 2020). NERDz is built on top of this modified version.
 
 # The Named Entity annotations
 
@@ -15,7 +15,7 @@ The named entity annotations in NERDz are continuous, non-overlapping, spans of 
 The annotated files are distributed in two different formats:
 
 - **conllu**: the original format of the treebank, where we added one additional column for the names entities. Here we used the tag "*name=*" to refer to the NER tag of each token.
-- **bmes**: this format is added to facilitate the use of the data with NCRF++. These files are devided into the three different scripts of the treebank extended by Touileb and Barnes (2021). 
+- **bmes**: this format is added to facilitate the use of the data with NCRF++. These files are divided into the three different scripts of the treebank extended by Touileb and Barnes (2021). 
 
 Both formats come in pre-defined train-dev-test splits, following the splits of the NArabizi treebank (Seddah et al. 2020).
 
@@ -25,7 +25,7 @@ NERDz is annotated using the IOB2 scheme for eight entity types: "PER", "GPE", "
 
 - **PER**: all person names, including fictional characters.
 
-- **GPE**: denotes mainly countries, but comprisesall entities with parliamentary-like governing systems. This means that states and cities are also GPEs.
+- **GPE**: denotes mainly countries, but comprises all entities with parliamentary-like governing systems. This means that states and cities are also GPEs.
 
 - **ORG**: represent companies, organisations, and institutions. This includes political parties and football clubs. 
 
@@ -35,11 +35,11 @@ NERDz is annotated using the IOB2 scheme for eight entity types: "PER", "GPE", "
 
 - **LOC**: all geographical places including continents, mountains, seas, buildings (e.g. football stadiums), streets, and neighborhoods.
 
-- **PROD**: characterizes objects, or line of objects, aslong as they are produced by humans.e.g.,TVs and vehicles. 
+- **PROD**: characterizes objects, or line of objects, as long as they are produced by humans.e.g.,TVs and vehicles. 
 
 - **MISC**: all entities that rarely occur in our dataset. These include quantities, money, diseases, and chemical components.
 
-The table below shows the distribution of the annotated entities accross types and splits.
+The table below shows the distribution of the annotated entities across types and splits.
 
 | Type | Train | Dev | Test | Total | %| 
 | :--- | ---: | ---: | ---: | ---: | ---: |
@@ -55,7 +55,7 @@ The table below shows the distribution of the annotated entities accross types a
 
 # Manual annotations
 
-Two  native  speakers  annotated  all  sentences from the NArabizi treebank. We compute two measures of agreement, *Krippendorff’s alpha* and *micro F1*-score. In terms of *Krippendorff’s alpha*, the agreement score is *α= 0.87*, which suggests strong evidence for good agreement.  The agreement in terms of *micro F1*-score achieved *86.3*. This evaluation score is based on SemEval 2013 task 9 evaluation scheme 3(Segura-Bedmar et al.,2013). Here, we used the strict measure, and compute F1 for exact match of both the entity boundary (the span of the entity), and the entity type. We disregard all annotations where both annotators agree that a token is not an entity, i.e., the "O" tag. 
+Two  native  speakers  annotated  all  sentences from the NArabizi treebank. We compute two measures of agreement, *Krippendorff’s alpha* and *micro F1*-score. In terms of *Krippendorff’s alpha*, the agreement score is *α= 0.87*, which suggests strong evidence for good agreement.  The agreement in terms of *micro F1*-score achieved *86.3*. This evaluation score is based on SemEval 2013 task 9 evaluation scheme (Segura-Bedmar et al.,2013). Here, we used the strict measure, and compute F1 for exact match of both the entity boundary (the span of the entity), and the entity type. We disregard all annotations where both annotators agree that a token is not an entity, i.e., the "O" tag. 
 
 # Cite
 

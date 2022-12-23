@@ -2,7 +2,7 @@
 
 This dataset is described in the paper ["*NERDz: A Preliminary Dataset of Named Entities for Algerian*"](https://aclanthology.org/2022.aacl-short.13/) by Samia Touileb, published in the Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing (Volume 2: Short Papers). 
 
-In the NERDz dataset we added named entity annotations on top of the extension of the NArabizi treebank ["*Touileb and Barnes (2021)*"](https://aclanthology.org/2021.findings-acl.324/), and which was originally introduced by ["*Seddah et al. (2020)*"](https://aclanthology.org/2020.acl-main.107/).
+In the NERDz dataset we added named entity annotations on top of the extension of the NArabizi treebank presented by [*Touileb and Barnes (2021)*](https://aclanthology.org/2021.findings-acl.324/), and which was originally introduced by [*Seddah et al. (2020)*](https://aclanthology.org/2020.acl-main.107/).
 
 # The NArabizi treebank
 
